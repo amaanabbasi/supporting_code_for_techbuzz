@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block content %}
+    
+<h1>Your Savings Account</h1>
+
+<a href="{{ url_for('transfer') }}">Money Transfer</a>
+    {% if current_user.is_authenticated %}
+<a href="{{ url_for('logout') }}">Logout</a>
+    {% else %}
+<a href="{{ url_for('login') }}">Login</a>
+    {% endif %}
+
+{% endblock content %}

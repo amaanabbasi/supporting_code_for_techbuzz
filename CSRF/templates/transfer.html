@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block content %}
+    <h1>Transfer Money to</h1>
+    <form name="transfer_form" method="POST" action="{{ url_for('transfer') }}">
+    
+    {{ form.email_address.label }}
+    {{ form.email_address }}
+    
+    {{ form.transfer.label }} $
+    {{ form.transfer }}
+        <input type="submit">
+    </form>
+{% endblock content %}
