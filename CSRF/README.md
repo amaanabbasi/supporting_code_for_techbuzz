@@ -6,4 +6,4 @@
 * `pip install -r requirements.txt`
 * `python3 app.py`
 
-[Goto localhost:5000](localhost:5000)
+[Goto localhost:5000](http://127.0.0.1:5000/)
